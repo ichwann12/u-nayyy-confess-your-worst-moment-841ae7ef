@@ -18,8 +18,8 @@ if (entry.length > 200 || entry.includes("\n")) {
 }
 
 const outDir =
-  process.env.MAKEFUN_BOT_DIR ??
   process.env.MAKEFUN_OUTPUT_DIR ??
+  process.env.MAKEFUN_BOT_DIR ??
   join(here, "output");
 
 mkdirSync(outDir, { recursive: true });
